@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:backgroundTint="#000000"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="677dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.692">
+
+        <LinearLayout
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnAlta"
+                android:layout_width="150dp"
+                android:layout_height="142dp"
+                android:onClick="altasBoton"
+                android:text="Añadir" />
+
+            <Button
+                android:id="@+id/btnGenero"
+                android:layout_width="150dp"
+                android:layout_height="142dp"
+                android:onClick="generoBoton"
+                android:text="Genero" />
+
+            <Button
+                android:id="@+id/btnVer"
+                android:layout_width="150dp"
+                android:layout_height="142dp"
+                android:onClick="verBoton"
+                android:text="Datos" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnEdad"
+                android:layout_width="150dp"
+                android:layout_height="142dp"
+                android:onClick="edadBoton"
+                android:text="Edad" />
+
+            <Button
+                android:id="@+id/btnValoracion"
+                android:layout_width="150dp"
+                android:layout_height="142dp"
+                android:onClick="valoracionBoton"
+                android:text="Valoranos" />
+
+            <Button
+                android:id="@+id/btnSalir"
+                android:layout_width="150dp"
+                android:layout_height="142dp"
+                android:onClick="salirBoton"
+                android:text="Salir" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
